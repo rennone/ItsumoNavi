@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+    <script src="js/rect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+    <script src="http://api.its-mo.com/cgi/loader.cgi?key=YourKey&ver=2.0&enc=EUC&force=1&alert=1&api=zdcmap.js,shape.js,geo.js" type="text/javascript"></script>
+    <script src="js/itsumo.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body onload="loadMap('viewArea');">
+<div class="base">
+    <div id="viewArea">
+    </div>
+    <div id="viewArea2" class="over">
+        <img src="image/img.png" alt="" />
+        <canvas id="cv"></canvas>
+    </div>
+    <div id="IBox" style="top:0px; left:540px; position:absolute;">
+        <input type="button" value="addListener" onclick="addListener();"><br>
+        <input type="button" value="removeListener" onclick="removeListener();"><br>
+        <input type="button" value="clearListeners" onclick="clearListeners();"><br>
+        <input type="button" value="clearInstanceListeners" onclick="clearInstanceListeners();">
+    </div>
+</div>
+</body>
+</html>
